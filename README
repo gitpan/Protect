@@ -1,0 +1,20 @@
+Protect is distributed under the same license as perl itself.
+
+  Protect allows you to set perl subroutines into one of three modes, public,
+member, or private.
+
+  In private mode, only code within the package in which the subroutine 
+exists can call the subroutine.
+
+  In member mode, only members with the package can call the subroutine.
+
+  In public mode, any(one||thing) can call the subroutine.
+
+  Protect, unfortunatly, does not work at compile time, only in run time.
+Changing this would require some pretty hefty changes to the perl core, and
+while they are supposed to be coming, I thought I'd write a quick solution
+myself.  As usual my quick solution turned into something more useful.
+
+  Any comments/questions appreciated.
+  James Duncan <jduncan@hawk.igs.net>
+ 
